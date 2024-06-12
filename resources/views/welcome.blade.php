@@ -119,28 +119,28 @@
                         <form action="{{route('extrar.vision')}}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="row">
-                                <label for="" style="color: white;">Identificadores</label>
+                                <label for="" style="color: black;">Identificadores</label>
 
                                 <input type="text" class="form-control" name="identificadores">
                             </div>
                             <div class="row">
-                                <label for="" style="color: white;">Inicio</label>
+                                <label for="" style="color: black;">Inicio</label>
 
                                 <input type="number" class="form-control" name="inicio">
                             </div>
                             <div class="row">
-                                <label for="" style="color: white;">Fin</label>
+                                <label for="" style="color: black;">Fin</label>
 
                                 <input type="number" class="form-control" name="fin">
                             </div>
                             <div class="row">
-                                <label for="" style="color: white;">PDF</label>
+                                <label for="" style="color: black;">PDF</label>
 
                                 <input type="file" class="form-control" name="pdf_file">
                             </div>
                             <br>
                             <div class="row">
-                                <button type="submit" class="btn btn-primary" style="color: white;background: #0d6efd;">Enviar</button>
+                                <button type="submit" class="btn btn-primary" style="color: black;background: #0d6efd;">Enviar</button>
                             </div>
                         </form>
                     </div>
