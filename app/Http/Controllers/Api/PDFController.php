@@ -18,6 +18,8 @@ use Google\Cloud\Vision\V1\ImageContext;
 use App\Services\OpenAIService;
 use OpenAI\Laravel\Facades\OpenAI;
 
+use function Laravel\Prompts\text;
+
 class PDFController extends Controller
 {
 
@@ -302,7 +304,7 @@ class PDFController extends Controller
         $data[] = [];
 
         $textoEnviar = " buscar $request->identificadores y devuélveme en enformato json del siguiente texto: ".$textoResultadoVision;
-
+        dd($textoEnviar);
         $result = OpenAI::chat()->create([
             'model' => 'gpt-3.5-turbo',
             'messages' => [
