@@ -347,7 +347,6 @@ class PDFController extends Controller
         } else {
             return json_decode($output);
         }*/
-        dd($output);
         return json_decode($output);
         return response()->json(['data' => $resultados,'mensaje' => $respueta]);
     }
