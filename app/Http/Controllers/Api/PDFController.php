@@ -206,7 +206,7 @@ class PDFController extends Controller
 
         // Ruta donde guardar las imágenes
         $rutaImagenes = public_path('imagenes/'.$namefiles.'/');
-        dd($rutaImagenes);
+
         // Verificar si el directorio existe, si no, crearlo
         if (!File::exists($rutaImagenes)) {
             File::makeDirectory($rutaImagenes, 0777, true, true);
@@ -215,6 +215,7 @@ class PDFController extends Controller
 
         $errores = [];
         $respueta = "se etrajeron todas las imagenes";
+
         // Iterar sobre cada página del PDF
         for ($pagina = $request->inicio; $pagina <= $numerodepaginas; $pagina++) {
             // Guardar la página actual como imagen
