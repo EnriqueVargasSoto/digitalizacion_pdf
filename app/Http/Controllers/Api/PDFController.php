@@ -230,6 +230,7 @@ class PDFController extends Controller
 
 
         }
+        dd($errores);
 
         // Inicializar el cliente de Cloud Vision
         $imageAnnotator = new ImageAnnotatorClient([
