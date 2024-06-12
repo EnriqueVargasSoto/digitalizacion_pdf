@@ -188,7 +188,7 @@ class PDFController extends Controller
 
     public function extractTextFromPdfVisionWeb(Request $request)
     {
-        dd($request);
+
         // Guardar el PDF
         $rutaPDF = $request->file('pdf_file')->store('pdfs');
 
