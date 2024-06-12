@@ -199,9 +199,9 @@ class PDFController extends Controller
         //dd($pdf);
         // Obtener el número total de páginas del PDF
         $numeroPaginas =  $pdf->getNumberOfPages();
-        dd($numeroPaginas);
-        $numerodepaginas=($request->fin<=$numeroPaginas)?$request->fin:$numeroPaginas;
 
+        $numerodepaginas=($request->fin<=$numeroPaginas)?$request->fin:$numeroPaginas;
+        dd($numerodepaginas);
         $namefiles = pathinfo($rutaPDF, PATHINFO_FILENAME);
         // Ruta donde guardar las imágenes
         $rutaImagenes = public_path('imagenes/'.$namefiles.'/');
