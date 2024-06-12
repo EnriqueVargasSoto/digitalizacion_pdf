@@ -300,7 +300,6 @@ class PDFController extends Controller
                 //dd($th);
             }
 
-            dd($errores);
 
         }
 
