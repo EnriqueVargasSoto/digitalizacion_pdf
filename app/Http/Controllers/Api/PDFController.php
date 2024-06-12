@@ -203,10 +203,10 @@ class PDFController extends Controller
         $numerodepaginas=($request->fin<=$numeroPaginas)?$request->fin:$numeroPaginas;
 
         $namefiles = pathinfo($rutaPDF, PATHINFO_FILENAME);
-        dd($namefiles);
+
         // Ruta donde guardar las imágenes
         $rutaImagenes = public_path('imagenes/'.$namefiles.'/');
-
+        dd($rutaImagenes);
         // Verificar si el directorio existe, si no, crearlo
         if (!File::exists($rutaImagenes)) {
             File::makeDirectory($rutaImagenes, 0777, true, true);
