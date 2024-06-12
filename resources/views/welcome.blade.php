@@ -126,12 +126,12 @@
                             <div class="row">
                                 <label for="" style="color: white;">Inicio</label>
 
-                                <input type="text" class="form-control" name="inicio">
+                                <input type="number" class="form-control" name="inicio">
                             </div>
                             <div class="row">
                                 <label for="" style="color: white;">Fin</label>
 
-                                <input type="text" class="form-control" name="fin">
+                                <input type="number" class="form-control" name="fin">
                             </div>
                             <div class="row">
                                 <label for="" style="color: white;">PDF</label>
