@@ -221,6 +221,7 @@ class PDFController extends Controller
             // Guardar la página actual como imagen
             try {
                 $pdf->setPage($pagina)->saveImage($rutaImagenes . 'pagina_' . $pagina . '.jpg');
+
             } catch (\Throwable $th) {
                 //throw $th;
                 //$errores [] = $th;
@@ -230,7 +231,7 @@ class PDFController extends Controller
 
 
         }
-        dd($errores);
+
 
         // Inicializar el cliente de Cloud Vision
         $imageAnnotator = new ImageAnnotatorClient([
@@ -299,7 +300,7 @@ class PDFController extends Controller
                 //dd($th);
             }
 
-
+            dd($errores);
 
         }
 
