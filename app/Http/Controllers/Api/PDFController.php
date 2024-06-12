@@ -263,7 +263,7 @@ class PDFController extends Controller
 
             // Ignorar archivos que no son imágenes
 
-            try {
+            // try {
                 //code...
                 $rutaArchivo = 'imagenes/'.$namefiles . '/' . 'pagina_' . $pagina . '.jpg';
             $imagen = file_get_contents(public_path($rutaArchivo));
@@ -294,11 +294,11 @@ class PDFController extends Controller
             $textoResultadoVision = $textoResultadoVision . $textoEtraido;
 
 
-            } catch (\Throwable $th) {
-                //$errores [] = $th;
-                array_push($errores, $th);
-                //dd($th);
-            }
+            // } catch (\Throwable $th) {
+            //     //$errores [] = $th;
+            //     array_push($errores, $th);
+            //     //dd($th);
+            // }
 
             dd($errores);
 
