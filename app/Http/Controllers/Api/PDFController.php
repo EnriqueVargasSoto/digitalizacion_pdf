@@ -192,7 +192,7 @@ class PDFController extends Controller
         // Guardar el PDF
         $rutaPDF = $request->file('pdf_file')->store('pdfs');
 
-
+        dd($rutaPDF);
         // Convertir todas las páginas del PDF en imágenes
         $pdf = new Pdf(storage_path('app/' . $rutaPDF));
         //$pdf->setPageRange(1, 5);
